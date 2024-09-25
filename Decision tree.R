@@ -10,7 +10,7 @@ indexes
 iris_train=iris[indexes,]
 iris_train
 
-iris_test=iris[indexes,]
+iris_test=iris[-indexes,]
 iris_test
 
 target=Species~Sepal.Length+Sepal.Width+Petal.Length+Petal.Width
