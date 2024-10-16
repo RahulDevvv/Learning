@@ -1,0 +1,62 @@
+---
+title: "Untitled"
+author: "You"
+date: "2024-04-15"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+-   Item 1
+-   Item 2
+    -   Item 2a
+    -   Item 2b
+
+#Numbered list
+
+1.  Item 1
+2.  Item 2
+3.  Item 3
+    1.  Item 3a
+    2.  Item 3b
+4.  Item 1
+5.  Item 2
+6.  Item 3
+    -   Item 3a
+    -   Item 3b
+
+-   Make text italic like *this* or *this*.
+-   Make text bold like **this** or **this**.
+-   Use backticks for code.
+-   Wrap a character to subscript in tildes (\~). For example, H~2~O renders as H~2~O.
+-   Wrap a character to superscript in carets (\^), like this: R^2^ renders as R^2^.
+
+#Code
+
+#include\<stdio.h\> #include\<conio.h\> int main() { print("hello world"); }
+
+#Sub script H~2~O
+
+#Super script a\^2
