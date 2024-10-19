@@ -68,14 +68,14 @@
 # }
 
 
-#num = as.numeric(readline("Enter number: "))
-#for (i in 1:num) {
-#  for (k in i:num) {
-#    cat(" ")
-#  }
-#  for(j in 1:i){
-#    cat("\n")
-#  }
-#  cat("\n")
-#}
+num = as.numeric(readline("Enter number: "))
+for (i in 1:num) {
+  for (k in i:num) {
+    cat(" ")
+  }
+  for(j in 1:i){
+    cat("\n")
+  }
+  cat("\n")
+}
 
