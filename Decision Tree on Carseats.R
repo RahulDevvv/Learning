@@ -1,5 +1,4 @@
 install.packages("ISLR")
-# Load required libraries
 library("ISLR")  # For the Carseats dataset
 library("tree")  # For decision tree
 library("rpart.plot")  # For better tree plotting
@@ -61,10 +60,12 @@ plot(cv_tree$size, cv_tree$dev, type = "b", xlab = "Tree Size", ylab = "Deviance
 #and labels x-axis as "Tree Size" and y-axis as "Deviance".
 
 
-
+
+
 pruned_tree <- prune.misclass(tree_model, best = 9) #reduces the tree to 9 nodes for better performance. 
 plot(pruned_tree) #displays the pruned tree
 text(pruned_tree, pretty = 0) #adds labels to show the decisions and predictions at each node.
-
+
+
 tree_pred_pruned <- predict(pruned_tree, testingdata, type = "class") 
 tree_pred_pruned
