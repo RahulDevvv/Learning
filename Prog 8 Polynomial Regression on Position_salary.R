@@ -82,6 +82,3 @@ predict(poly_reg, data.frame(Level = 6.5,
                              Level2 = 6.5^2,
                              Level3 = 6.5^3,
                              Level4 = 6.5^4))
-#6.5 is not a whole number, so it’s used to test
-#if the model can predict values between the known levels (in this case, between Level 6 and Level 7).
-#This is called interpolation—predicting within the range of known data.
