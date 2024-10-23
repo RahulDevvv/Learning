@@ -1,5 +1,4 @@
-# h=data.frame()
-# house=edit(h)
+
 
 house_data<-data.frame(
   Size_sqft=c(1500,1800,2000,2200,2500,3000,3500,4000,4500,5000),
