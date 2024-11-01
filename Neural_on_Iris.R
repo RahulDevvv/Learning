@@ -22,18 +22,18 @@ neural_model <- neuralnet(Species ~ Sepal.Length + Sepal.Width + Petal.Length + 
 plot(neural_model)
 
 # Compute predictions on the test set
-#predictions <- compute(neural_model, test_data[, 1:4])$net.result
+predictions <- compute(neural_model, test_data[, 1:4])$net.result
 
 # Convert predicted probabilities to class labels
-#predicted_classes <- apply(predictions, 1, which.max)
+predicted_classes <- apply(predictions, 1, which.max)
 
 # Compare predicted species with actual species
-#actual_classes <- test_data$Species
-#confusion_matrix <- table(Predicted = predicted_classes, Actual = actual_classes)
+actual_classes <- test_data$Species
+confusion_matrix <- table(Predicted = predicted_classes, Actual = actual_classes)
 
 # Print the confusion matrix
-#print(confusion_matrix)
+print(confusion_matrix)
 
 # Calculate accuracy
-#accuracy <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
-#cat("Accuracy: ", accuracy * 100, "%\n")
+accuracy <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+cat("Accuracy: ", accuracy * 100, "%\n")
