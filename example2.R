@@ -18,7 +18,6 @@ svm_model <- svm(formula=Purchased ~.,
                  data=training_set,
                  type='C-classification',
                  kernel='linear')
-
 svm_model
 predictions <- predict(svm_model, newdata = test_set[-3])
 predictions
