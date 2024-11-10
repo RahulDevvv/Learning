@@ -1,1 +1,1 @@
-R-Script programming cocept and applications.
+R-Script programming concept and applications.
